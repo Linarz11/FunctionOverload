@@ -1,4 +1,7 @@
-#include "Functions.h"
+#include"Functions.h"
+#include"Functions.cpp"
+
+
 
 void main()
 {
@@ -16,6 +19,9 @@ void main()
 	cout << "Отсортированный массив:\n";
 	Sort(arr, N) ;
 	Print(arr, N);
+	cout << "\nМассив сдвинутый вправо на один элемент:\n ";
+	Shift(arr, N);
+	Print(arr, N);
 	cout << delimiter << endl;
 
 	cout << "Двумерный массив типа int " << endl;
@@ -25,7 +31,13 @@ void main()
 	cout << "Сумма элементов массива: " << Sum(arrint, ROWS, COLS) << endl;
 	cout << "Среднее арифметическое элементов массива: " << Avg(arrint, ROWS, COLS) << endl;
 	cout << "Минимальный элемент массива: " << minvaluein(arrint, ROWS, COLS) << endl;
-
+	cout << "Максимальный элемент массива: " << maxvaluein(arrint, ROWS, COLS) << endl;
+	cout << "Отсортированный массив:\n";
+	Sort(arrint, ROWS, COLS);
+	Print(arrint, ROWS, COLS);
+	cout << "\nМассив сдвинутый вправо на один элемент:\n ";
+	Shift(arrint,ROWS, COLS);
+	Print(arrint, ROWS, COLS);
 	cout << delimiter << endl;
 
 	cout << "Одномерный массив типа float " << endl;
@@ -40,6 +52,9 @@ void main()
 	cout << "Отсортированный массив:\n";
 	Sort(arrf, NFL);
 	Print(arrf, NFL);
+	cout << "\nМассив сдвинутый вправо на один элемент:\n ";
+	Shift(arrf, NFL);
+	Print(arrf, NFL);
 
 	cout << delimiter << endl;
 
@@ -50,7 +65,11 @@ void main()
 	cout << endl;
 	cout << "Сумма элементов массива: " << Sum(arrfl2, ROWS, COLS) << endl;
 	cout << "Среднее арифметическое элементов массива: " << Avg(arrfl2, ROWS, COLS) << endl;
-
+	cout << "Минимальный элемент массива: " << minvaluein(arrfl2, ROWS, COLS) << endl;
+	cout << "Максимальный элемент массива: " << maxvaluein(arrfl2, ROWS, COLS) << endl;
+	cout << "Отсортированный массив:\n";
+	Sort(arrfl2, ROWS, COLS);
+	Print(arrfl2, ROWS, COLS);
 
 	cout << delimiter << endl;
 
@@ -66,6 +85,9 @@ void main()
 	cout << "Отсортированный массив:\n";
 	Sort(arrd, NDBL);
 	Print(arrd, NDBL);
+	cout << "\nМассив сдвинутый вправо на один элемент:\n ";
+	Shift(arrd, NDBL);
+	Print(arrd, NDBL);
 	cout << delimiter << endl;
 
 	cout << "Двумерный массив типа double " << endl;
@@ -74,7 +96,11 @@ void main()
 	Print(arrdbl2, ROWS, COLS);
 	cout << "Сумма элементов массива: " << Sum(arrdbl2, ROWS, COLS) << endl;
 	cout << "Среднее арифметическое элементов массива: " << Avg(arrdbl2, ROWS, COLS) << endl;
-
+	cout << "Минимальный элемент массива: " << minvaluein(arrdbl2, ROWS, COLS) << endl;
+	cout << "Максимальный элемент массива: " << maxvaluein(arrdbl2, ROWS, COLS) << endl;
+	cout << "Отсортированный массив:\n";
+	Sort(arrdbl2, ROWS, COLS);
+	Print(arrdbl2, ROWS, COLS);
 	cout << endl;
 	
 	cout << delimiter << endl;
@@ -85,7 +111,8 @@ void main()
 	Fillrand(arrch, NCH);
 	Print(arrch, NCH);
 	cout << endl;
-	
+	cout << "Сумма элементов массива: " << Sum(arrch, NCH) << endl;
+
 	cout << delimiter << endl;
 
 	cout << "Двумерный массив типа char " << endl;
